@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<table border="1" id="myTable">
+			<thread>
+				<tr>
+					{% for key in keys %}
+						<th>{{ key }}</th>
+					{% endfor %}
+				</tr>
+				{% for i in ranges %}
+					<tr>
+						{% for key in keys %}
+							{% if key=="Threat" %}
+								<td>
+									<form action="{{ url_for('update') }}" method="post">
+										<input type="radio" name="threat" value="Threat" checked>Threat<br>
+										<input type="radio" name="threat" value="Not Threat">Not Threat<br>
+										<button>Submit</submit>
+									</form>
+								</td>
+							{% endif %}
+							<td>{{ data[i].get(key) }}</td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			</thread>
+		</table>
+	</body>
+</html>
