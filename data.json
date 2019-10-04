@@ -1,0 +1,19 @@
+[
+	{
+		"date": "2018-02-08",
+		"hour": "11:50",
+		"ip": "192.168.65.53",
+		"login_off": "logoff",
+		"login_type": "UnAuthorized Login",
+		"reason": "bad login",
+		"sql": "select team,OSS_ID,pre_data_count,category,open_id from general_table",
+		"user": "TEM0977",
+		"after_hours": "0",
+		"before_hours": "0",
+		"threat_score": "0.9",
+		"threat_level": "high",
+		"user_name": "Don Martin",
+		"query_locaiton": "43.83253422374152,-114.66333566866021",
+		"state": "California"
+	}
+]
